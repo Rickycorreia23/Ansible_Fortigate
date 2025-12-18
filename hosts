@@ -1,0 +1,5 @@
+[fortigates]
+fortigate01 ansible_host=10.35.129.46 ansible_user="admin" ansible_password="g3n3va"
+
+[fortigates:vars]
+ansible_network_os=fortinet.fortios.fortios

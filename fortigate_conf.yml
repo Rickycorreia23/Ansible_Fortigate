@@ -1,0 +1,23 @@
+---
+- hosts: fortigates
+  connection: httpapi
+  collections:
+    - fortinet.fortios
+  gather_facts: false
+  #vars_files:
+  #- vars.yml
+  
+  vars:
+    vdom: "root"
+    ansible_httpapi_port: 443
+    ansible_httpapi_use_ssl: yes
+    ansible_httpapi_validate_certs: no 
+
+
+  tasks:
+  - name: Disable SSO
+    fortinet.fortios.fortios_system_global:
+      system_global:
+        admin_forticloud_sso_login: "disable"
+
+      

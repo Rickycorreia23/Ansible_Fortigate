@@ -1,0 +1,11 @@
+---
+ 
+vdom: "root"
+ansible_httpapi_use_ssl: yes
+ansible_httpapi_validate_certs: no
+ansible_httpapi_port: 443
+ssl_verify: "False"
+
+firewall_ip: "10.35.129.46"
+username: "admin"
+password: "g3n3va"
